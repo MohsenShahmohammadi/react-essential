@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Footer = () => {
+const FooterSection01 = () => {
   return (
     <div style={{height:"150px", backgroundColor:"yellow"}}>Footer</div>
   )
 }
 
-export default Footer
+export default FooterSection01
