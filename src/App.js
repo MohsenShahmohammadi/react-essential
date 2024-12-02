@@ -1,9 +1,9 @@
-import Section01 from "./section01/Section01";
+import Section02 from "./section02/Section02";
 
 function App() {
   return (
     <>
-      <Section01/>
+      <Section02/>
     </>
   );
 }
