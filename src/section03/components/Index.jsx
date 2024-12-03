@@ -55,7 +55,6 @@ const Login = () => {
           <button className="btn-form" onClick={LoginHandler}>
             Login
           </button>
-          <button onClick={()=>alert()}>cancel</button>
         </div>
       </div>
     </>
