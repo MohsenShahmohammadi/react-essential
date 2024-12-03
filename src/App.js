@@ -1,9 +1,11 @@
-import Section02 from "./section02/Section02";
+import Section03 from "./section03/Section03";
 
 function App() {
   return (
     <>
-      <Section02/>
+      <div>
+        <Section03 />
+      </div>
     </>
   );
 }
