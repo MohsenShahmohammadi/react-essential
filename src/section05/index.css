@@ -1,0 +1,12 @@
+*,*::before,*::after{
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    }
+    .container{
+        width: 300px;
+        margin: 10px auto;
+    }
