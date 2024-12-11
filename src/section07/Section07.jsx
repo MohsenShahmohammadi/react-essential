@@ -1,34 +1,30 @@
 import React, { useState } from "react";
-import Blog from "./components/blog/Blog";
-import CategoryBlog from "./components/categoryBlog/CategoryBlog";
 import "./index.css";
+import CategoryBlog from "./components/categoryBlog/CategoryBlog";
+import Blog from "./components/blog/Blog";
 import { category, blog } from "./data/staticData";
-
 const Section07 = () => {
   const [categorySelected, setCategorySelected] = useState(category[0]);
-  let blogSelected = [];
+  let blogSelected = blog.filter((c) => c.categoryRef === categorySelected.id);
 
-  for (let index = 0; index < blog.length; index++) {
-    blogSelected = blog.filter((c) => c.categoryRef === categorySelected.id);
-  }
   return (
     <>
       <div className="container">
         <div className="header">
-          <h2 className="website-title">My weblog pages</h2>
+          <h3 className="header-title">My Weblog pages</h3>
         </div>
         <div className="main-blog">
           <div className="weblog-main-left">
-            <CategoryBlog data={category} onPress={setCategorySelected} />
+            <CategoryBlog data={category} onPress={setCategorySelected}/>
           </div>
           <div className="weblog-main-right">
-          {blogSelected.map((item)=>(
-            <Blog key={item.id} data={item} categoryName={categorySelected.name} />
-          ))}
+            {blogSelected.map((item) => (
+              <Blog data={item} categoryName={categorySelected.name} />
+            ))}
           </div>
         </div>
         <div className="footer">
-          <span className="copyright">Copyright @2025</span>
+          <p>Copyright @2025</p>
         </div>
       </div>
     </>

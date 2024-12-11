@@ -1,11 +1,11 @@
-.catBlg-container {
-  margin: 5px 10px;
+.catBlog-container{
+    margin: 5px 10px;
 }
-.catBlog-menu {
-  display: flex;
-  flex-direction: column;
+.catBlog-menu{
+    display: flex;
+    flex-direction: column;
 }
-.catBlog-menu-item {
+.catBlog-menu-item{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,7 +15,7 @@
     transition: all 0.5s;
 }
 .catBlog-menu-item:hover{
-    background-color: darkgrey;
+    background-color: darkgray;
     color: white;
 }
 .catBlog-item{
@@ -24,8 +24,8 @@
 }
 .catBlog-menu-item .badge{
     background-color: black;
-    font-size: 0.8rem;
     color: white;
+    font-size: 0.8rem;
     border-radius: 5px;
     padding: 3px 6px;
 }

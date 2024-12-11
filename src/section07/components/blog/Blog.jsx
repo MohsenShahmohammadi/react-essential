@@ -36,7 +36,7 @@ const Blog = ({ data,categoryName }) => {
                   <label>Author:</label>
                 </td>
                 <td>
-                  <p>{data.author}</p>
+                  <p>{data.Author}</p>
                 </td>
               </tr>
               <tr>
