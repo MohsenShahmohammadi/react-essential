@@ -1,0 +1,31 @@
+.catBlg-container {
+  margin: 5px 10px;
+}
+.catBlog-menu {
+  display: flex;
+  flex-direction: column;
+}
+.catBlog-menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+    transition: all 0.5s;
+}
+.catBlog-menu-item:hover{
+    background-color: darkgrey;
+    color: white;
+}
+.catBlog-item{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.catBlog-menu-item .badge{
+    background-color: black;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 6px;
+}

@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.main-blog {
+  display: flex;
+  flex-direction: row;
+}
+.weblog-main-left {
+  position: sticky;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  border: 2px solid #c9c9c9;
+  background-color: #c1c1c1;
+}
+.weblog-main-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 10px;
+}
