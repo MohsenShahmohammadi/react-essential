@@ -1,0 +1,123 @@
+.product-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    position: relative;
+}
+.image-group{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+}
+.discount-describe{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #c1c1c1;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.image-product{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.product-info{
+    padding: 5px 10px;
+    height: 150px;
+}
+.product-info h3{
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+.color-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Color{
+    display: inline-block;
+    content: " ";
+    margin: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #c1c1c1;
+}
+.old-price{
+    text-decoration: line-through;
+    color: red;
+    margin: 0 3px;
+}
+.btn-group{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.btnp{
+    display: flex;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+.btnp-add{
+    background-color: #4CAF50;
+    color: white;
+    transition: all 0.3s;
+}
+.btnp-add:hover{
+    background-color: #45a049;
+    color: #c1c1c1;
+}
+.btnp-remove{
+    background-color: #f44336;
+    color: white;
+    transition: all 0.3s;
+}
+.btnp-remove:hover{
+    background-color: #da190b;
+    color: #c1c1c1;
+}
+.btn-inline-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.qty-data-show{
+    border: 1px solid #c1c1c1;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    width: 70px;
+}
+.btnp-add-sm{
+    background-color: #4CAF50;
+    color: white;
+    transition: all 0.3s;
+}
+.btnp-add-sm:hover{
+    background-color: #45a049;
+    color: #c1c1c1;
+}
+.btnp-remove-sm{
+    background-color: #f44336;
+    color: white;
+    transition: all 0.3s;
+}
+.btnp-remove-sm:hover{
+    background-color: #da190b;
+    color: #c1c1c1;
+}
+.empty-basket{
+    padding: 0 10px;
+    color: #505050;
+}

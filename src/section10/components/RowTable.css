@@ -1,0 +1,24 @@
+.table-item0 {
+  background-color: #dddbdb;
+}
+.table-item1 {
+}
+.table-item0,.table-item1{
+    padding: 5px 10px;
+    border: 1px solid #c1c1c1;
+}
+.table-item0,.table-item1 input{
+    padding: 3px 6px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+}
+.action-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.action-group a {
+  margin: 0 5px;
+  cursor: pointer;
+}

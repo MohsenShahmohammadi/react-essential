@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+button {
+  background-color: blue;
+  color: white;
+  margin: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+.btn-group09 {
+  display: flex;
+  flex-direction: row;
+}
+.btn {
+  background-color: #c1c1c1;
+  text-align: center;
+  color: black;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.post-container ul {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+/****** sample 08 ****/
+.image-gallery-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #c9c9c9;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.image-gallery-container h3 {
+  color: #454546;
+  font-size: 1.4rem;
+}
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.img-gallery {
+  width: 150px;
+  height: auto;
+  margin: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 3px;
+}

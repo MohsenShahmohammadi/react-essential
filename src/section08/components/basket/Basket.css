@@ -1,0 +1,39 @@
+.basket-group{
+
+}
+.basket-group-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+.basket-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.basket-list{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    background-color: #d3cccc;
+    padding: 0 5px;
+}
+.basket-sum{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+padding-left: 15px;
+padding-right: 5px;
+font-weight: bold;
+background-color: #d3cccc;
+}
+.basket-total{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-weight: bold;
+    border-top: 1px solid gray;
+}

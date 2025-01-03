@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: 0 auto;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.form-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #c1c1c1;
+  margin-bottom: 10px;
+}
+.title-group {
+  display: flex;
+  flex-direction: column;
+}
+.title-group h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+}
+.filter-table {
+  display: flex;
+  padding: 5px 10px;
+  border:1px solid gray;
+  border-radius: 5px;
+  background-color: #c1c1c1;
+  margin: 0 5px;
+  color: black;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.filter-table:hover{
+    background-color: gray;
+    color: white;
+}
+.badge {
+  padding: 1px 4px;
+  background-color: pink;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.btn-primary{
+padding: 10px 15px;
+background-color: green;
+color: white;
+cursor: pointer;
+transition: all 0.5s;
+font-weight: 700;
+border-radius: 5px;
+}
+.btn-primary:hover{
+background-color: darkgreen;
+color: #c1c1c1;
+}
+.my-table{
+width: calc(100% - 20px);
+margin: 10px;
+border: 1px solid #c1c1c1;
+border-radius: 10px;
+border-collapse: collapse;
+}
+.table-header{
+  padding: 5px 10px;
+  border: 1px solid #c1c1c1;
+
+}
+.table-header{
+  text-align: center;
+  background-color: brown;
+  color: white;
+  font-weight: 700;
+}
+.table-header a{
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
