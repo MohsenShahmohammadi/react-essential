@@ -1,9 +1,9 @@
 .product-container{
     display: flex;
     flex-direction: column;
-    border-radius: 10px 10px 0 0;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px 10px 0 0 ;
     position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .image-group{
     display: flex;
@@ -13,14 +13,15 @@
 }
 .discount-describe{
     position: absolute;
-    top: 5px;
+    top:5px;
     right: 5px;
     background-color: #c1c1c1;
-    color: black;
+    color: back;
     padding: 5px;
     border-radius: 5px;
     font-size: 0.9rem;
 }
+
 .image-product{
     width: 100%;
     height: 100%;
@@ -28,8 +29,9 @@
     border-radius: 10px 10px 0 0;
 }
 .product-info{
-    padding: 5px 10px;
+    padding:5px 10px;
     height: 150px;
+
 }
 .product-info h3{
     font-size: 1.2rem;
@@ -40,7 +42,7 @@
     flex-direction: row;
     align-items: center;
 }
-.Color{
+.color{
     display: inline-block;
     content: " ";
     margin: 5px;
@@ -60,30 +62,21 @@
     right: 0;
 }
 .btnp{
-    display: flex;
-    padding: 5px 10px;
-    margin: 10px 5px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    justify-self: flex-end;
+display: flex;
+padding: 5px 10px;
+margin: 10px 5px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+justify-content: flex-end;
 }
 .btnp-add{
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     transition: all 0.3s;
 }
 .btnp-add:hover{
     background-color: #45a049;
-    color: #c1c1c1;
-}
-.btnp-remove{
-    background-color: #f44336;
-    color: white;
-    transition: all 0.3s;
-}
-.btnp-remove:hover{
-    background-color: #da190b;
     color: #c1c1c1;
 }
 .btn-inline-group{
@@ -100,7 +93,7 @@
     width: 70px;
 }
 .btnp-add-sm{
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     transition: all 0.3s;
 }
@@ -116,8 +109,4 @@
 .btnp-remove-sm:hover{
     background-color: #da190b;
     color: #c1c1c1;
-}
-.empty-basket{
-    padding: 0 10px;
-    color: #505050;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./index.css";
-import Basket from "./components/basket/Basket";
 import Product from "./components/product/Product";
+import Basket from "./components/basket/Basket";
+import "./index.css";
 import { products, BasketItems } from "./data/SampleProduct.js";
 
 const Section08 = () => {
@@ -31,9 +31,8 @@ const Section08 = () => {
       setDiscountPrice((prev) => prev + productItem.save);
     }
   };
-
-  const RemoveFromBasketHandler = (productItem) => {
-    var existingItem = basketData.find((item) => item.id === productItem.id);
+  const removeFromBasketHandler = (productItem) => {
+    const existingItem = basketData.find((item) => item.id === productItem.id);
     if (existingItem) {
       let updateBasket;
       if (existingItem.qty > 1) {
@@ -48,7 +47,7 @@ const Section08 = () => {
       setDiscountPrice((prev) => prev - productItem.save);
     }
   };
-  const valueChanged = (productItem, value) => {
+  const valueChange = (productItem, value) => {
     const numericValue = parseInt(value, 10) || 0;
     var existingItem = basketData.find((item) => item.id === productItem.id);
     let updateBasket;
@@ -57,12 +56,7 @@ const Section08 = () => {
         updateBasket = basketData.filter((item) => item.id !== productItem.id);
       } else {
         updateBasket = basketData.map((item) =>
-          item.id === productItem.id
-            ? {
-                ...item,
-                qty: numericValue,
-              }
-            : item
+          item.id === productItem.id ? { ...item, qty: numericValue } : item
         );
       }
       const { sum, discount } = updateBasket.reduce(
@@ -73,8 +67,6 @@ const Section08 = () => {
         },
         { sum: 0, discount: 0 }
       );
-      console.log(sum);
-      console.log(discount);
       setBasketData(updateBasket);
       setSumPrice(sum);
       setDiscountPrice(discount);
@@ -84,7 +76,7 @@ const Section08 = () => {
     <>
       <div className="container">
         <div className="header">
-          <h2>My online Store</h2>
+          <h2 className="header-title">My online store</h2>
         </div>
         <div className="main">
           <div className="content-product">
@@ -94,19 +86,15 @@ const Section08 = () => {
                   data={product}
                   basketData={basketData}
                   addToBasket={(e) => AddToBasketHandler(e)}
-                  RemoveFromBasketHandler={(e) => RemoveFromBasketHandler(e)}
-                  valueChanged={(id, value) => valueChanged(id, value)}
+                  removeFromBasket={(e) => removeFromBasketHandler(e)}
+                  valueChange={(e, v) => valueChange(e, v)}
                 />
               </div>
             ))}
           </div>
           <div className="basket-container">
             <div className="basket-group">
-              <Basket
-                basketData={basketData}
-                sumPrice={sumPrice}
-                discountPrice={discountPrice}
-              />
+              <Basket basketData={basketData} sumPrice={sumPrice} discountPrice={discountPrice}/>
             </div>
           </div>
         </div>
