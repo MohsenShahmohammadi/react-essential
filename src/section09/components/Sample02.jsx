@@ -1,20 +1,20 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import '../index.css';
+import React, { useEffect, useState } from "react";
 
 const Sample02 = () => {
   const [count, setCount] = useState(0);
-
   useEffect(() => {
-    console.log(`Sample02 - my Clicks count is ${count}`);
+    if(count !== 0) {
+        console.log(`Sample02 - my Click is : ${ count }`);
+    }
+
   }, [count]);
   return (
-    <>
+    <div>
       <h1>Hi Developer</h1>
-      <p>Sample 02: Change data</p>
+      <p>Sample 02: What's UseEffect..</p>
       <span>{count}</span>
-      <button onClick={()=>setCount(count+1)}>Click Me</button>
-    </>
+      <button onClick={() => setCount(count + 1)}>Clock Me</button>
+    </div>
   );
 };
 
