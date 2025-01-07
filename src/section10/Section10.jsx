@@ -80,7 +80,7 @@ const Section10 = () => {
         lastmodifydate: FormatDate(new Date()),
         mode: true,
       };
-      setIntialData([...initialData, newData]);
+      setIntialData([newData,...initialData]);
     }
   };
 
